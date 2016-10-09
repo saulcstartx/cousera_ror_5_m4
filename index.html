@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Menu App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="js/angular.min.js" ></script>
+    <script src="js/angular-ui-router.min.js"></script>
+    
+  </head>
+<body ng-app="MenuApp">
+  <div class="container">
+    <loader-indicator></loader-indicator>
+    <ui-view></ui-view>
+  </div>
+  
+
+  <!-- Modules -->
+  <script src="src/menu-app/menuapp.module.js" ></script>
+  <script src="src/data/data.module.js" ></script>
+  <script src="src/loader-spinner/loader.spinner.module.js" ></script>
+
+  <!-- Routes -->
+  <script src="src/routes.js" ></script>
+
+  <!-- Constants -->
+  <script src="src/data/confdata.constant.js" ></script>
+
+  <!-- Services -->
+  <script src="src/data/menudata.service.js" ></script>
+
+  <!-- Components -->
+  <script src="src/menu-app/categories.component.js" ></script>
+  <script src="src/menu-app/items.component.js" ></script>
+  <script src="src/loader-spinner/loader.indicator.component.js" ></script>
+
+  <!-- Controllers -->
+  <script src="src/menu-app/category-list.controller.js" ></script>
+  <script src="src/menu-app/item-list.controller.js" ></script>
+  
+</body>
+</html>
